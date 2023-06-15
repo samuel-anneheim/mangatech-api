@@ -26,7 +26,18 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-## Installation
+## Installation Docker
+
+For start the projet add your .env file with variable added
+
+```bash
+$ docker compose up (-d optional)
+```
+-d  start docker in the background
+
+Docker is configure to run npm run start:debug for developement 
+
+## Installation local
 
 ```bash
 $ npm install
