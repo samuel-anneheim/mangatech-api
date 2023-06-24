@@ -24,7 +24,6 @@ import { Editor } from './editor/entities/editor.entity';
 import { ConfigModule } from '@nestjs/config';
 import { AuthModule } from './auth/auth.module';
 import { ImageModule } from './image/image.module';
-import { MulterModule } from '@nestjs/platform-express';
 
 @Module({
   imports: [
@@ -49,9 +48,6 @@ import { MulterModule } from '@nestjs/platform-express';
       ],
       synchronize: false,
       autoLoadEntities: true,
-    }),
-    MulterModule.register({
-      dest: './files',
     }),
     CollectionModule,
     EditionModule,
